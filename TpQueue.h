@@ -4,10 +4,16 @@
 
 #ifndef FINALTP_TOQUEUE_H
 #define FINALTP_TOQUEUE_H
-#include <bits/stdc++.h>
-using namespace std;
-template <class T>
-class TpQueue{
 
-};
+#include "Nodo.h"
+namespace TP{
+    template <class T>
+    class Queue{
+    private:
+        DoubleLinked::Nodo<T>*inicio;
+        DoubleLinked::Nodo<T>*fin;
+    public:
+
+    };
+}
 #endif //FINALTP_TOQUEUE_H

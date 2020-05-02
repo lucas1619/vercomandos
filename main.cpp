@@ -2,17 +2,24 @@
 #include "TpStack.h"
 #include "TpQueue.h"
 using namespace std;
+struct persona{
+    string nombre;
+    persona(string n){
+        nombre = n;
+    }
+};
 int main() {
-    TpStack<int> *pilaNUmeros = new TpStack<int>();
-    pilaNUmeros->push(8);
-    pilaNUmeros->push(9);
-    pilaNUmeros->push(10);
-    pilaNUmeros->push(11);
-    pilaNUmeros->push(12);
-    cout<<pilaNUmeros->getSize()<<endl;
-    pilaNUmeros->pop();
-    pilaNUmeros->pop();
-    cout<<pilaNUmeros->getSize()<<endl;
-    cout<<pilaNUmeros->top();
+    TP::Stack<persona*> *pilaNUmeros = new TP::Stack<persona*>();
+    vector<persona*>* per = new vector<persona*>();
+    per->push_back(new persona("Lucas"));
+    per->push_back(new persona("Alejandro"));
+    per->push_back(new persona("Moreno"));
+    per->push_back(new persona("Olivos"));
+    pilaNUmeros->push(per->at(0));
+    pilaNUmeros->push(per->at(1));
+    pilaNUmeros->push(per->at(2));
+    pilaNUmeros->push(per->at(3));
+    cout<<pilaNUmeros->top()->nombre;
+    TP::Queue<persona>hola;
     return 0;
 }

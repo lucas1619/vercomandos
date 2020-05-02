@@ -11,17 +11,6 @@ using namespace std;
  Vamos a trabajar los nodos con memoria dinámica porsiacaso
  *
  */
-namespace Linked{
-    template <class T>
-    struct Nodo{
-        T Element;
-        Nodo<T> *Next;
-        Nodo(){
-            Element = NULL;
-            Next = nullptr;
-        }
-    };
-}
 namespace DoubleLinked{
     template <class T>
     struct Nodo{
@@ -29,9 +18,20 @@ namespace DoubleLinked{
         Nodo<T> *Next;
         Nodo<T> *Prev;
         Nodo(){
-            Element = NULL;
-            Next = nullptr;
-            Prev = nullptr;
+            this->Element = NULL;
+            this->Next = nullptr;
+            this->Prev = nullptr;
+        }
+    };
+}
+namespace Linked{
+    template <class T>
+    struct Nodo{
+        T Element;
+        Nodo<T> *Next;
+        Nodo(){
+            this->Element = NULL;
+            this->Next = nullptr;
         }
     };
 }

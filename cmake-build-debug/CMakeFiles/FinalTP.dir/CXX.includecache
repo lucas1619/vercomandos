@@ -11,8 +11,8 @@ bits/stdc++.h
 -
 
 /home/lucasmoreno/CLionProjects/FinalTP/TpQueue.h
-bits/stdc++.h
--
+Nodo.h
+/home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
 
 /home/lucasmoreno/CLionProjects/FinalTP/TpStack.h
 Nodo.h

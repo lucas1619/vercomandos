@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
+bits/stdc++.h
+-
+
+/home/lucasmoreno/CLionProjects/FinalTP/TpQueue.h
+bits/stdc++.h
+-
+
+/home/lucasmoreno/CLionProjects/FinalTP/TpStack.h
+Nodo.h
+/home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
+
+/home/lucasmoreno/CLionProjects/FinalTP/main.cpp
+iostream
+-
+TpStack.h
+/home/lucasmoreno/CLionProjects/FinalTP/TpStack.h
+TpQueue.h
+/home/lucasmoreno/CLionProjects/FinalTP/TpQueue.h
+

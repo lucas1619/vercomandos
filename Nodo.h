@@ -15,15 +15,24 @@ namespace Linked{
     template <class T>
     struct Nodo{
         T Element;
-        Nodo *Next;
+        Nodo<T> *Next;
+        Nodo(){
+            Element = NULL;
+            Next = nullptr;
+        }
     };
 }
 namespace DoubleLinked{
     template <class T>
     struct Nodo{
         T Element;
-        Nodo *Next;
-        Nodo *Prev;
+        Nodo<T> *Next;
+        Nodo<T> *Prev;
+        Nodo(){
+            Element = NULL;
+            Next = nullptr;
+            Prev = nullptr;
+        }
     };
 }
 #endif //FINALTP_NODO_H

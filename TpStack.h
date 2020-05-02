@@ -17,6 +17,15 @@ class TpStack{
 private:
     Nodo<T>*inicio;
     long long size;
+    Nodo<T>* crearNodo(T newData){
+        Nodo<T>* nuevoNodo = new Nodo<T>();
+        nuevoNodo->Element = newData;
+        nuevoNodo->Next = nullptr;
+        return nuevoNodo;
+    }
+    void DestruirNodo(Nodo<T> * nodo){
+        delete nodo;
+    }
 public:
     TpStack(){
         this->inicio = nullptr;
@@ -29,27 +38,17 @@ public:
         return this->inicio->Element;
     }
     void pop(){
-        if(this->size == 0){
-            return;
-        } else if(this->size == 1){
-            delete this->inicio;
-            this->inicio = nullptr;
-        } else if(this->size > 1){
-            Nodo<T>*aux = this->inicio->Next;
-            delete this->inicio;
-            this->inicio = aux;
+        if(!this->isEmpty()){
+            Nodo<T> * primero = this->inicio;
+            this->inicio = this->inicio->Next;
+            this->DestruirNodo(primero);
+            --this->size;
         }
-        --this->size;
     }
     void push(T Elemento){
-        Nodo<T>* nuevo;
-        nuevo->Element = Elemento;
-        if(this->size == 0){
-            this->inicio = nuevo;
-        } else{
-            nuevo->Next = this->inicio;
-            this->inicio = nuevo;
-        }
+        Nodo<T> * insertedNode = crearNodo(Elemento);
+        insertedNode->Next = this->inicio;
+        this->inicio = insertedNode;
         ++this->size;
     }
     bool isEmpty(){

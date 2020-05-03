@@ -6,8 +6,8 @@
 #define FINALTP_GEL_H
 
 #include "Product.h"
-template <class T>
-class Gel : public Product<T> {
+
+class Gel : public Product {
 private:
 public:
 

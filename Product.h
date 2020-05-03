@@ -4,7 +4,6 @@
 
 #ifndef FINALTP_PRODUCT_H
 #define FINALTP_PRODUCT_H
-template <class T>
 class Product{
 private:
 public:

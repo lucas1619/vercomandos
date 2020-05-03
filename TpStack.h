@@ -32,7 +32,10 @@ namespace TP{
             this->size = 0;
         }
         ~Stack(){
-            delete this->inicio;
+            Linked::Nodo<T>*aux = this->inicio;
+            while(!this->isEmpty()){
+                this->pop();
+            }
         }
         T top(){
             return this->inicio->Element;

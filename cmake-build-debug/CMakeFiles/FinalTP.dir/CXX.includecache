@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/lucasmoreno/CLionProjects/FinalTP/Human.h
+
 /home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
 bits/stdc++.h
 -
@@ -14,15 +16,11 @@ bits/stdc++.h
 Nodo.h
 /home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
 
-/home/lucasmoreno/CLionProjects/FinalTP/TpStack.h
-Nodo.h
-/home/lucasmoreno/CLionProjects/FinalTP/Nodo.h
-
 /home/lucasmoreno/CLionProjects/FinalTP/main.cpp
 iostream
 -
-TpStack.h
-/home/lucasmoreno/CLionProjects/FinalTP/TpStack.h
 TpQueue.h
 /home/lucasmoreno/CLionProjects/FinalTP/TpQueue.h
+Human.h
+/home/lucasmoreno/CLionProjects/FinalTP/Human.h
 

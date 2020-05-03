@@ -4,48 +4,37 @@
 
 #ifndef FINALTP_HUMAN_H
 #define FINALTP_HUMAN_H
-template <class T>
-class Human {
+class Human  {
 protected:
-    T PosX;
-    T PosY;
-    T Height;
-    T Width;
-    T FamilyMembers; //number of family members
-    T UsePPHH;
-    T UseSoap;
-    T UseGel;
-    T NeedPPHH;
-    T NeedSoap;
-    T NeedGel;
-    T RandomDesire;
-
-    Human<T>* next;
-
+    short PosX;
+    short PosY;
+    short Height;
+    short Width;
+    short FamilyMembers; //number of family members
+    short UsePPHH;
+    short UseSoap;
+    short UseGel;
+    short NeedPPHH;
+    short NeedSoap;
+    short NeedGel;
+    short RandomDesire;
 public:
 
     Human() {}
     ~Human() {}
 
-    virtual void Dibujar() = 0;
-
-    void setNext(Human<T>* n) {
-        this->next = n;
-    }
-    T getPosX() {return this->PosX;}
-    T getPosY() {return this->PosY;}
-    T getHeight() {return this->Height;}
-    T getWidth()  {return this->Width;}
-    T getFamilyMembers() {return this->FamilyMembers;}
-    T getUsePPHH()       {return this->UsePPHH;}
-    T getUseSoap()       {return this->UseSoap;}
-    T getUseGel()        {return this->UseGel;}
-    T getNeedPPHH()		 {return this->NeedPPHH;}
-    T getNeedSoap()		 {return this->NeedSoap;}
-    T getNeedGel()		 {return this->NeedGel;}
-    T getRandomDesire()	 {return this->RandomDesire;}
-    Human<T>* getNext() {
-        return this->next;
-    }
+    virtual void Dibujar(){};
+    short getPosX() {return this->PosX;}
+    short getPosY() {return this->PosY;}
+    short getHeight() {return this->Height;}
+    short getWidth()  {return this->Width;}
+    short getFamilyMembers() {return this->FamilyMembers;}
+    short getUsePPHH()       {return this->UsePPHH;}
+    short getUseSoap()       {return this->UseSoap;}
+    short getUseGel()        {return this->UseGel;}
+    short getNeedPPHH()		 {return this->NeedPPHH;}
+    short getNeedSoap()		 {return this->NeedSoap;}
+    short getNeedGel()		 {return this->NeedGel;}
+    short getRandomDesire()	 {return this->RandomDesire;}
 };
 #endif //FINALTP_HUMAN_H

@@ -18,7 +18,6 @@ namespace DoubleLinked{
         Nodo<T> *Next;
         Nodo<T> *Prev;
         Nodo(){
-            this->Element = NULL;
             this->Next = nullptr;
             this->Prev = nullptr;
         }
@@ -30,7 +29,6 @@ namespace Linked{
         T Element;
         Nodo<T> *Next;
         Nodo(){
-            this->Element = NULL;
             this->Next = nullptr;
         }
     };
